@@ -1,3 +1,7 @@
 mlflow docker image.
 
 Official tutorial: https://mlflow.org/docs/latest/getting-started/intro-quickstart/
+
+start with docker compose:
+
+`docker compose up -d`
