@@ -1,6 +1,10 @@
 FROM python:3.11
 
-RUN pip install mlflow==2.14.0rc0
+RUN pip install mlflow==2.20.0
 
-ENTRYPOINT ["mlflow", "server", "--host", "0.0.0.0", "--port", "8080"]
+EXPOSE 5000
+EXPOSE 8080
+
+COPY entrypoint.sh ./entrypoint.sh
+ENTRYPOINT ["./entrypoint.sh"]
 
